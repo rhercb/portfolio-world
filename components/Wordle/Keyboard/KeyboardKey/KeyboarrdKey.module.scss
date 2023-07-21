@@ -1,0 +1,15 @@
+.Key {
+    @apply text-[1.25em] font-bold border-0 p-0 h-[58px] rounded-[4px] cursor-pointer bg-[#d3d6da] text-black grow shrink basis-0 flex justify-center items-center uppercase;
+    -webkit-tap-highlight-color: rgba(0,0,0,.3);
+
+    &:not(:last-of-type) {
+        @apply mr-[6px]
+    }
+
+    &.correct {
+        @apply bg-[#6aaa64] text-white;
+    }
+    &.used {
+        @apply bg-[#787c7e] text-white;
+    }
+}

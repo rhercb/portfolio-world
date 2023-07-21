@@ -1,0 +1,20 @@
+.tile {
+    @apply w-full inline-flex justify-center align-middle text-[32px] items-center uppercase border text-white border-[2px] border-[#d3d6da] bg-white;
+
+    &.withLetter {
+        @apply border-[#878a8c] text-black;
+    }
+
+    &.correct {
+        @apply bg-[#6aaa64] text-white;
+    }
+    &.inWord {
+        @apply bg-[#c9b458] text-white;
+    }
+    &.notInWord {
+        @apply bg-[#787c7e] text-white;
+    }
+    &.shake {
+        @apply animate-shake;
+    }
+}
